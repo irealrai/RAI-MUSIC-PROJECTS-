@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Rap Music | Shubham Rai</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #000;
+      color: #fff;
+    }
+    header {
+      padding: 20px;
+      background: #111;
+      text-align: center;
+      font-size: 24px;
+      font-weight: bold;
+      letter-spacing: 2px;
+    }
+    nav {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 15px;
+      padding: 12px;
+      background: #181818;
+    }
+    nav a {
+      color: #fff;
+      text-decoration: none;
+      font-size: 16px;
+    }
+    .hero {
+      height: 50vh;
+      background: url('https://images.unsplash.com/photo-1511379938547-c1f69419868d') center/cover;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      padding: 20px;
+    }
+    .hero h1 {
+      font-size: 28px;
+      background: rgba(0,0,0,0.55);
+      padding: 15px;
+      border-radius: 10px;
+      line-height: 1.4;
+    }
+    .section {
+      padding: 30px 15px;
+      text-align: center;
+    }
+    .songs {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 18px;
+      padding: 15px;
+    }
+    .song-card {
+      background: #111;
+      padding: 18px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px #000;
+    }
+    footer {
+      padding: 18px;
+      text-align: center;
+      background: #111;
+      margin-top: 30px;
+    }
+
+    /* Responsive Fixes */
+    @media (max-width: 600px) {
+      header { font-size: 20px; }
+      nav a { font-size: 14px; }
+      .hero { height: 40vh; }
+      .hero h1 { font-size: 22px; padding: 12px; }
+    }
+  </style>
+</head>
+<body>
+  <header>Shubham Rai - Rap Artist</header>
+
+  <nav>
+    <a href="#home">Home</a>
+    <a href="#songs">Songs</a>
+    <a href="#about">About</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <div class="hero" id="home">
+    <h1>Feel The Vibe. Feel The Bars.<br/>Indian Hip-Hop Artist</h1>
+  </div>
+
+  <div class="section" id="songs">
+    <h2>Latest Tracks</h2>
+    <div class="songs">
+      <div class="song-card">
+        <h3>Track 1</h3>
+        <p>Short description of the track.</p>
+      </div>
+      <div class="song-card">
+        <h3>Track 2</h3>
+        <p>Short description of the track.</p>
+      </div>
+      <div class="song-card">
+        <h3>Track 3</h3>
+        <p>Short description of the track.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="section" id="about">
+    <h2>About Me</h2>
+    <p>Hello! I'm Shubham Rai, an independent Indian hip-hop artist. I create rap songs, hooks, and storytelling tracks. Welcome to my official website!</p>
+  </div>
+
+  <div class="section" id="contact">
+    <h2>Contact</h2>
+    <p>Email: yourmail@example.com</p>
+    <p>Instagram: @yourhandle</p>
+  </div>
+
+  <footer>
+    © 2025 Shubham Rai | Rap Music Website
+  </footer>
+</body>
+</html>
