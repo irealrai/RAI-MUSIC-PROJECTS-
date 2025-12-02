@@ -1,0 +1,50 @@
+body {
+    margin: 0;
+    background: black;
+    color: white;
+    font-family: Arial;
+    text-align: center;
+}
+
+nav {
+    background: #111;
+    padding: 15px;
+}
+
+nav a {
+    color: white;
+    margin: 0 15px;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.container {
+    padding: 30px;
+}
+
+button, .btn {
+    background: #ff0000;
+    padding: 12px 22px;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    text-decoration: none;
+    display: inline-block;
+    margin-top: 15px;
+}
+
+.track-card {
+    background: #111;
+    padding: 20px;
+    margin: 15px auto;
+    border-radius: 10px;
+    max-width: 340px;
+}
+
+img.artist-pic {
+    width: 180px;
+    border-radius: 50%;
+    margin-top: 20px;
+}
