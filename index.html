@@ -4,118 +4,63 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Rai Music</title>
+<link rel="stylesheet" href="style.css">
 
 <style>
-body {
-    margin: 0;
-    background: black;
+/* Home page special styling (same as your original design) */
+.hero {
+    padding: 60px 20px;
+    background: linear-gradient(180deg, #000, #111);
+    text-align: center;
+}
+
+.hero img {
+    width: 180px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+}
+
+.hero h1 {
+    font-size: 40px;
+    margin: 10px 0;
+}
+
+.hero p {
+    font-size: 18px;
+    color: #bbb;
+}
+
+.hero .btn-main {
+    margin-top: 25px;
+    background: #ff0000;
+    padding: 14px 26px;
+    font-size: 18px;
+    text-decoration: none;
     color: white;
-    font-family: Arial;
-}
-
-/* NAVIGATION */
-nav {
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-    background: #111;
-    padding: 15px;
-    position: sticky;
-    top: 0;
-}
-nav button {
-    background: #222;
-    padding: 10px 17px;
-    border: none;
-    border-radius: 5px;
-    color: white;
-    font-size: 16px;
-    font-weight: bold;
-}
-
-/* PAGES */
-.page {
-    display: none; /* by default hidden */
-    padding: 40px 20px;
-    animation: fade 0.5s;
-}
-@keyframes fade {
-    from { opacity: 0; }
-    to { opacity: 1; }
-}
-
-/* Show selected page */
-.active {
-    display: block;
-}
-
-/* Track cards */
-.track-card {
-    background: #111;
-    padding: 20px;
-    margin: 15px auto;
-    border-radius: 10px;
-    max-width: 300px;
+    border-radius: 8px;
+    display: inline-block;
 }
 </style>
 </head>
 
 <body>
 
-<!-- NAVIGATION -->
+<!-- NAVIGATION (links to other pages) -->
 <nav>
-    <button onclick="showPage('home')">HOME</button>
-    <button onclick="showPage('about')">ABOUT</button>
-    <button onclick="showPage('tracks')">TRACKS</button>
-    <button onclick="showPage('contact')">CONTACT</button>
+    <a href="index.html">HOME</a>
+    <a href="about.html">ABOUT</a>
+    <a href="tracks.html">TRACKS</a>
+    <a href="contact.html">CONTACT</a>
 </nav>
 
-<!-- HOME PAGE -->
-<div class="page active" id="home">
+<!-- HERO SECTION (same as your first version) -->
+<section class="hero">
+    <img src="https://i.imgur.com/3GvwKxP.png" alt="Artist Photo">
     <h1>Rai Music</h1>
-    <p>Indian Hip-Hop Artist</p>
-</div>
+    <p>Indian Hip-Hop Artist • Rapper • Lyricist</p>
 
-<!-- ABOUT PAGE -->
-<div class="page" id="about">
-    <h2>About Me</h2>
-    <p>Rai — Versatile Indian Hip-Hop Artist from Noida.</p>
-    <p>Known for unique flow, punchlines & catchy hooks.</p>
-</div>
-
-<!-- TRACKS PAGE -->
-<div class="page" id="tracks">
-    <h2>Tracks</h2>
-
-    <div class="track-card">
-        <h3>Underrated Flow</h3>
-        <button>Listen Now</button>
-    </div>
-
-    <div class="track-card">
-        <h3>Intro X Rai</h3>
-        <button>Listen Now</button>
-    </div>
-
-</div>
-
-<!-- CONTACT PAGE -->
-<div class="page" id="contact">
-    <h2>Contact</h2>
-    <p>Instagram: @iamrai</p>
-    <p>Email: raimusic@gmail.com</p>
-</div>
-
-
-<!-- PAGE SWITCH SCRIPT -->
-<script>
-function showPage(pageId) {
-    document.querySelectorAll('.page').forEach(page => {
-        page.classList.remove('active');
-    });
-    document.getElementById(pageId).classList.add('active');
-}
-</script>
+    <a href="tracks.html" class="btn-main">Listen My Tracks</a>
+</section>
 
 </body>
 </html>
