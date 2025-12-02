@@ -1,50 +1,158 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Shubham Rai - Rap Artist</title>
-  <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shubham Rai - Rap Artist</title>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: #111;
+            color: white;
+        }
+
+        /* Header */
+        header {
+            text-align: center;
+            background: #000;
+            padding: 8px 0; /* compact */
+            font-size: 20px;
+            font-weight: bold;
+        }
+
+        /* Navigation */
+        nav {
+            background: #111;
+            padding: 5px 0; /* compact */
+            text-align: center;
+        }
+
+        nav a {
+            color: white;
+            margin: 0 10px; /* compact spacing like old one */
+            text-decoration: none;
+            font-size: 15px;
+        }
+
+        nav a:hover {
+            color: #999;
+        }
+
+        /* Hero Section */
+        .hero {
+            background: url('https://images.unsplash.com/photo-1511671782779-c97d3d27a1d4?auto=format&fit=crop&w=1350&q=80') 
+                        center/cover no-repeat;
+            height: 350px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 0 20px;
+        }
+
+        .hero-text {
+            background: rgba(0, 0, 0, 0.5);
+            padding: 10px 20px; /* compact */
+            border-radius: 5px;
+            font-size: 20px; /* compact */
+            line-height: 26px;
+        }
+
+        /* Latest Tracks */
+        .tracks-section {
+            text-align: center;
+            padding: 30px 0;
+        }
+
+        .tracks {
+            display: flex;
+            justify-content: center;
+            gap: 10px; /* compact */
+            padding: 0 10px;
+            flex-wrap: wrap;
+        }
+
+        .track {
+            background: #000;
+            padding: 15px;
+            width: 30%;
+            border-radius: 10px;
+            min-width: 120px;
+        }
+
+        footer {
+            text-align: center;
+            padding: 10px 0;
+            font-size: 13px;
+            background: #000;
+            margin-top: 20px;
+        }
+
+        @media(max-width: 600px) {
+            nav a {
+                margin: 0 8px;
+                font-size: 14px;
+            }
+
+            .hero {
+                height: 300px;
+            }
+
+            .hero-text {
+                font-size: 18px;
+                padding: 8px 12px;
+            }
+
+            .track {
+                width: 90%;
+                margin-bottom: 10px;
+            }
+        }
+    </style>
 </head>
 
 <body>
 
-  <header>Shubham Rai - Rap Artist</header>
+    <header>Shubham Rai - Rap Artist</header>
 
-  <nav>
-    <a href="index.html">Home</a>
-    <a href="tracks.html">Songs</a>
-    <a href="about.html">About</a>
-    <a href="contact.html">Contact</a>
-  </nav>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="songs.html">Songs</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+    </nav>
 
-  <div class="hero">
-    <h1>Feel The Vibe. Feel The Bars.<br/>Indian Hip-Hop Artist</h1>
-  </div>
-
-  <div class="section">
-    <h2>Latest Tracks</h2>
-    <div class="songs">
-      <div class="song-card">
-        <h3>Track 1</h3>
-        <p>Short description of the track.</p>
-      </div>
-
-      <div class="song-card">
-        <h3>Track 2</h3>
-        <p>Short description of the track.</p>
-      </div>
-
-      <div class="song-card">
-        <h3>Track 3</h3>
-        <p>Short description of the track.</p>
-      </div>
+    <div class="hero">
+        <div class="hero-text">
+            Feel The Vibe. Feel The Bars.<br>
+            Indian Hip-Hop Artist
+        </div>
     </div>
-  </div>
 
-  <footer>
-    © 2025 Shubham Rai | Rap Music Website
-  </footer>
+    <section class="tracks-section">
+        <h2>Latest Tracks</h2>
+
+        <div class="tracks">
+            <div class="track">
+                <h3>Track 1</h3>
+                <p>Short description of the track.</p>
+            </div>
+
+            <div class="track">
+                <h3>Track 2</h3>
+                <p>Short description of the track.</p>
+            </div>
+
+            <div class="track">
+                <h3>Track 3</h3>
+                <p>Short description of the track.</p>
+            </div>
+        </div>
+    </section>
+
+    <footer>© 2025 Shubham Rai | Rap Music Website</footer>
 
 </body>
 </html>
